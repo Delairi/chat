@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: rgba(166, 214, 233, 0.492);
+}
+
+:root {
+  --color-azul: rgba(166, 214, 233, 0.492);
+  --font-mont: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(59, 59, 59);
+  border-radius: 10px;
+}
+
+.break{
+  overflow-wrap: anywhere;
+}
+
+body{
+  font-family: var(--font-mont);
+}

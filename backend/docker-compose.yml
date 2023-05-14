@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  backend-chat:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: backend-chat
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - PORT=4003
+    ports:
+      - 4003:4003
+    
