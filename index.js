@@ -25,7 +25,7 @@ Users()
 
 if (process.env.NODE_ENV === 'production') {
     app.use(cors({
-        origin: 'http://localhost:4003',
+        origin: 'https://chat.delairis.com',
     }))
 }
 if(process.env.NODE_ENV === 'development')
