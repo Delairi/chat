@@ -35,7 +35,7 @@ const Users = () => {
             const searchUser = UsersActive.users.find((user) => user.id === socket.id)
             const searchTo = UsersActive.users.find((user) => user.username === to)
 
-            if (searchUser) {
+            if (searchUser && searchTo) {
                 if (!searchUser.chat) searchUser.chat = []
                 if (!searchTo.chat) searchTo.chat = []
 
